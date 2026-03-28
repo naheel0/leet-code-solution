@@ -1,10 +1,9 @@
 function recoverOrder(order: number[], friends: number[]): number[] {
     let result =[]
+    let friendSet =new Set(friends)
     for(let i=0;i<order.length;i++){
-        for(let j=0;j<friends.length;j++){
-            if(order[i]==friends[j]){
-                result.push(order[i])
-            }
+        if(friendSet.has(order[i])){
+            result.push(order[i])
         }
     }
     return result
