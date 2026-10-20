@@ -3,7 +3,7 @@
  * @return {number}
  */
 var reverse = function(x) {
-   let result =0;
+     let result =0;
     if(x>0){
        result= Number(x.toString().split("").reverse().join(""))
      }else if(x<0){
